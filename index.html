@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background:rgb(99, 96, 96);
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background:rgb(126, 49, 97);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  width:100%;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.logo h2 {
+  color: #20a077;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo h2 span {
+  color:rgb(207, 118, 11);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #02303b;
+  font-size: 17px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e15a25;
+}
+
+.login-btn {
+  background:black;
+  color: white;
+  border: none;
+  padding: 13px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background:#e15a25;
+}
+.container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      width: 80%;
+      height: 80%;
+      margin-left: 150px;
+      margin-top: 50px;
+    }
+
+    .box {
+      border-radius: 10px;
+      background-color: rgb(42, 178, 187);
+      box-shadow: 5px 3px 10px rgb(224, 35, 21);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      height:200px;
+    }
+
+    .skill-name {
+        font-family:'Arial Narrow Bold';
+      font-size: 34px;
+      margin-bottom:65px;
+      color:rgb(224, 35, 21);
+      
+    }
+
+.image {
+    width:480px;
+    height:300px;
+    border-radius:10%;
+    margin-top:5%;
+    margin-left:10%;
+}
+.image3 {
+    width:480px;
+    height:300px;
+    border-radius:50%;
+    margin-top:5%;
+    margin-left:10%;
+}
+.contact-form {
+            background-color:black;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 650px;
+            margin-left:30%;
+            margin-top:8%;
+            box-shadow:  -5px -3px 10px rgb(13, 13, 13);
+            margin-bottom:5%;
+            
+
+        }
+        .contact-form h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        .contact-form p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .contact-form textarea {
+            height: 80px;
+            resize: none;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0a0b0b;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+      <img src="c:\Users\pondu\Desktop\sac\333.jpj.png" alt="logo">
+      <h2><span>AITAM</span>SAC</h2>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#Developres club">Developers club</a></li>
+      <li><a href="#Security club">Security club</a></li>
+      <li><a href="#Salesforce club">Salesforce club</a></li>
+      <li><a href="#Robotics club">Robotics club</a></li>
+      <li><a href="#Design club">Design club</a></li>
+      <li><a href="#Photography club">Photography club</a></li>
+    </ul>
+
+    <button class="login-btn">login</button>
+  </nav>
+  <div>
+    <h1 style="margin-left:23%;margin-top:8%;font-size:60px;">STUDENT ACTIVITY CENTER</h1>
+
+</div>
+<div class="container">
+    <div class="box box1">
+      <div class="skill-name">Developers club</div>
+      <h2>"Code. Create. Innovate."</h2>
+    </div>
+
+    <div class="box box2">
+      <div class="skill-name">Security club</div>
+     <h2>"Protecting the digital world."</h2>
+    </div>
+
+    <div class="box box3">
+      <div class="skill-name">Salesforce club</div>
+     <h2>"Empowering connections."</h2>
+    </div>
+
+    <div class="box box4">
+      <div class="skill-name">Robotics club</div>
+      <h2>"Building the future today."</h2>
+    </div>
+
+    <div class="box box5">
+      <div class="skill-name">Design club</div>
+      <h2>"Creativity meets purpose."</h2>
+    </div>
+
+    <div class="box box6">
+      <div class="skill-name">Photography club</div>
+      <h2>"Capturing moments that matter."</h2>
+      
+    </div>
+  </div>
+<div>
+  <section id="Developres club">
+  <div style="background: rgb(220, 195, 49); padding: 50px 100px;margin-left:3%;margin-right:3%;margin-top:8%;">
+  <h1 style="text-align:center; font-size:60px; text-shadow: 1px 2px 3px rgb(19, 19, 19); color:rgb(224, 35, 21);">
+    DEVELOPERS CLUB
+  </h1>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 40px;">
+    <img src="c:\Users\pondu\Desktop\sac\devlopers.jpj.jpeg" alt="profile" class="image">
+
+    <div style="max-width: 500px; font-size: 22px; color: rgb(50, 50, 50); line-height: 1.5; font-weight: 300;">
+      <p>
+        The Developers Club is a community of passionate programmers dedicated to building innovative web, mobile, and software projects. 
+        Our goal is to enhance coding skills, explore new technologies, and collaborate on creative solutions that make a difference.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+ <section id="Security club">
+   <div style="background: rgb(85, 229, 23); padding: 50px 100px;margin-left:3%;margin-right:3%;margin-top:8%;">
+  <h1 style="text-align:center; font-size:60px; text-shadow: 1px 2px 3px rgb(19, 19, 19); color:rgb(224, 35, 21);">
+    SECURITY CLUB
+  </h1>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 40px;">
+    <img src="c:\Users\pondu\Desktop\sac\security.jpj.jpeg" alt="profile" class="image">
+
+    <div style="max-width: 500px; font-size: 22px; color: rgb(50, 50, 50); line-height: 1.5; font-weight: 300;">
+      <p>
+        A security club is a group dedicated to educating members about cybersecurity,
+         which involves learning and practicing skills in information security to protect against digital threats.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="Salesforce club">
+ <div style="background: rgb(229, 70, 174); padding: 50px 100px;margin-left:3%;margin-right:3%;margin-top:8%;">
+  <h1 style="text-align:center; font-size:60px; text-shadow: 1px 2px 3px rgb(19, 19, 19); color:rgb(224, 35, 21);">
+    SALESFORCE CLUB
+  </h1>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 40px;">
+    <img src="c:\Users\pondu\Desktop\sac\salesforce.jpeg" alt="profile" class="image">
+
+    <div style="max-width: 500px; font-size: 22px; color: rgb(50, 50, 50); line-height: 1.5; font-weight: 300;">
+      <p>
+        Salesforce is used for customer relationship management (CRM) to help businesses manage customer data,
+         improve customer relationships, and drive sales. It provides cloud-based software for sales, service,
+          marketing, and e-commerce, and uses AI to offer insights and automation.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="Robotics club">
+<div style="background: rgb(70, 184, 229); padding: 50px 100px;margin-left:3%;margin-right:3%;margin-top:8%;">
+  <h1 style="text-align:center; font-size:60px; text-shadow: 1px 2px 3px rgb(19, 19, 19); color:rgb(224, 35, 21);">
+    ROBOTICS CLUB
+  </h1>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 40px;">
+    <img src="c:\Users\pondu\Desktop\sac\robotics.jpeg" alt="profile" class="image">
+
+    <div style="max-width: 500px; font-size: 22px; color: rgb(50, 50, 50); line-height: 1.5; font-weight: 300;">
+      <p>
+        A robotics club is a group of students who collaboratively design, build,
+         and program robots to solve challenges and compete in events.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="Design club"></section>
+<div style="background: rgb(251, 152, 139); padding: 50px 100px;margin-left:3%;margin-right:3%;margin-top:8%;">
+  <h1 style="text-align:center; font-size:60px; text-shadow: 1px 2px 3px rgb(19, 19, 19); color:rgb(224, 35, 21);">
+    DESIGN CLUB
+  </h1>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 40px;">
+    <img src="c:\Users\pondu\Desktop\sac\design.png" alt="profile" class="image">
+
+    <div style="max-width: 500px; font-size: 22px; color: rgb(50, 50, 50); line-height: 1.5; font-weight: 300;">
+      <p>
+        A design club is a group or organization focused on developing design skills and fostering creativity, often involving workshops,
+         collaborative projects, and a focus on design thinking.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="Photography club">
+<div style="background: rgb(250, 221, 124); padding: 50px 100px;margin-left:3%;margin-right:3%;margin-top:8%;">
+  <h1 style="text-align:center; font-size:60px; text-shadow: 1px 2px 3px rgb(19, 19, 19); color:rgb(224, 35, 21);">
+    PHOTOGRAPHY CLUB
+  </h1>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 50px; margin-top: 40px;">
+    <img src="c:\Users\pondu\Desktop\sac\photography.jpeg" alt="profile" class="image">
+
+    <div style="max-width: 500px; font-size: 22px; color: rgb(50, 50, 50); line-height: 1.5; font-weight: 300;">
+      <p>A photography club is a group that fosters a passion for photography through skill development, creative expression,
+ and community building via activities like workshops, photo walks, competitions, and exhibitions. 
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+<div>
+  <div class="contact-form" >
+        <h2 style="color: #111;padding-left:25%;">Contact Form</h2>
+        <p>Contact us for Support</p>
+        <form>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="tel" placeholder="Your Phone Number (optional)">
+            <input type="url" placeholder="Your Web Site (optional)">
+            <textarea placeholder="Type your message here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+    
+
+</div>
+</body>
+</html>
